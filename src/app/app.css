@@ -1,37 +1,28 @@
-/* Navbar container */
+/* Custom Navbar Styling */
 .custom-navbar {
   background-color: #1f1f1f;
-  padding: 1rem 2rem;
+  padding: 0.75rem 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Brand styling */
 .navbar-brand {
   color: #00d8ff;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-decoration: none;
 }
 
-/* Nav links container */
-.nav-links {
-  margin-left: auto;
+.navbar-brand:hover {
+  color: #00bcd4;
 }
 
-/* Link styling */
+/* Remove underline and style links */
 .custom-link {
   color: #ffffff;
   text-decoration: none;
+  margin-left: 1rem;
   font-weight: 500;
-  font-size: 1rem;
-  position: relative;
-  padding-bottom: 4px;
   transition: color 0.3s ease;
-}
-
-/* Remove bullets and underline */
-.custom-link::before {
-  content: none;
 }
 
 .custom-link:hover {
@@ -41,4 +32,9 @@
 /* Active link styling */
 .active {
   color: #00d8ff !important;
+  border-bottom: 2px solid #00d8ff;
+  padding-bottom: 2px;
+}
+a{
+  color: white;
 }
