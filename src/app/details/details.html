@@ -1,0 +1,13 @@
+<div *ngIf="product" class="product-detail-card">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">{{ product.name }}</h2>
+      <ul class="product-info">
+        <li><strong>Price:</strong> ${{ product.price }}</li>
+        <li><strong>Location:</strong> {{ product.location }}</li>
+        <li><strong>Details:</strong> {{ product.details }}</li>
+      </ul>
+      <a routerLink="/product" class="btn btn-success">← Go Back</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,83 @@
+.product-table-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  font-family: 'Century Gothic', Arial, sans-serif;
+  color: #fff;
+}
+
+.product-table-container {
+  width: 100%;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  overflow-x: auto;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  color: #fff;
+
+  thead {
+    background-color: rgba(255, 255, 255, 0.1);
+
+    th {
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 1rem;
+      color: #00ffcc;
+      text-align: center;
+    }
+  }
+
+  tbody {
+    tr {
+      transition: background 0.3s ease;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.08);
+      }
+
+      td, th {
+        padding: 0.75rem;
+        text-align: center;
+        vertical-align: middle;
+        color: #f0f0f0;
+      }
+
+      .btn-outline-info {
+        font-weight: bold;
+        transition: all 0.3s ease;
+        color: white;
+
+        &:hover {
+          background-color: #00ffcc;
+          color: #203a43;
+          border-color: #00ffcc;
+
+        }
+        .view-details-btn {
+  color: #fff !important;
+  border-color: #00ffcc;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  color: white;
+
+  &:hover {
+    background-color: #00ffcc;
+    color: #203a43 !important;
+    border-color: #00ffcc;
+  }
+}
+
+      }
+    }
+  }
+}

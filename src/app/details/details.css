@@ -1,0 +1,57 @@
+.product-detail-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Century Gothic', Arial, sans-serif;
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 1.5rem;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+
+  .card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #00ffcc;
+  }
+
+  .product-info {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+
+    li {
+      margin-bottom: 0.5rem;
+      opacity: 0.95;
+    }
+  }
+
+  .btn-success {
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 0.5rem 1.2rem;
+    transition: background 0.3s ease;
+    color: white;
+
+    &:hover {
+      background-color: #00ffcc;
+      color: #203a43;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
